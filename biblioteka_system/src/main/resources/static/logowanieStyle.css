@@ -1,0 +1,171 @@
+/* Fonts Form Google Font ::- https://fonts.google.com/  -:: */
+@import url('https://fonts.googleapis.com/css?family=Abel|Abril+Fatface|Alegreya|Arima+Madurai|Dancing+Script|Dosis|Merriweather|Oleo+Script|Overlock|PT+Serif|Pacifico|Playball|Playfair+Display|Share|Unica+One|Vibur');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    background-image: url(https://cdn.pixabay.com/photo/2022/10/16/19/39/teacup-7526022_960_720.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    font-family: 'Abel', sans-serif;
+    background-size: cover;
+}
+
+form {
+    max-width: 450px;
+    min-height: 500px;
+    height: auto;
+    border-radius: 8px;
+    margin: 50px auto;
+    box-shadow: 0 20px 200px #131A40;
+    padding: 2%;
+    background-color: #3e403f5c;
+
+}
+
+
+header {
+    margin: 2% auto 10% auto;
+    text-align: center;
+}
+
+
+header h2 {
+    font-size: 250%;
+    font-family: 'Playfair Display', serif;
+    color: #e13d06d7;
+    font-weight: 200;
+    margin: 20px 0;
+}
+
+
+header p {
+    letter-spacing: 0.05em;
+    color: rgba(255, 255, 255, 0.395);
+    letter-spacing: 0.02rem;
+
+}
+
+
+
+.input-item {
+    background: #fff;
+    color: rgb(39, 38, 38);
+    padding: 14.5px 0px 15px 9px;
+    border-radius: 5px 0px 0px 5px;
+}
+
+
+.field-set {
+    margin: 0 auto;
+}
+
+.into {
+    margin: 0 auto;
+}
+
+input[class="form-input"] {
+    display: block;
+    width: 80%;
+    height: 50px;
+    box-shadow: 1px 1px 2px #131A40;
+    border-radius: 5px;
+    border: none;
+    transition: all 0.2s linear;
+    margin: 0 auto;
+    letter-spacing: 0.05em;
+    background: white;
+    font-size: 16px;
+    font-family: 'Abel', sans-serif;
+    color: #9C3E00;
+    padding: 5px;
+    border-radius: 5px;
+    transition: 0.2s linear;
+
+}
+
+.wto {
+    margin: 0 auto;
+}
+
+
+button {
+    display: block;
+    color: #252537;
+    width: 80%;
+    height: 50px;
+    padding: 0 20px;
+    background: #fff;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s linear;
+    margin: 10px auto;
+    letter-spacing: 0.05em;
+    background: #131A40;
+    color: whitesmoke;
+    border: none;
+}
+
+.sign-up {
+    background: transparent;
+    margin: 30px auto;
+    color: #f0eae6;
+
+
+}
+
+a:visited {
+    color: #f0eae6;
+    text-decoration: none;
+}
+
+
+
+/* buttons hover */
+button:hover {
+    transform: translatey(5px);
+    box-shadow: none;
+}
+
+/* buttons hover Animation */
+button:hover {
+    animation: ani9 0.3s ease-in-out infinite alternate;
+}
+
+
+
+@keyframes ani9 {
+    0% {
+        transform: translateY(3px);
+    }
+
+    100% {
+        transform: translateY(5px);
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    form {
+        width: 60vw;
+        max-width: 450px;
+
+        height: auto;
+        margin: 50px auto;
+    }
+
+}
+
+@media only screen and (max-width: 600px) {
+    form {
+        width: 100vw;
+        height: 100vh;
+        margin: 0 auto;
+    }
+}
