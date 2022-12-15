@@ -17,6 +17,10 @@
     <link
             href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&family=Source+Sans+Pro:wght@300;600&display=swap"
             rel="stylesheet">
+
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Biblioteka</title>
 
@@ -273,7 +277,7 @@
 
 
 <%--  W tym miejscu nacisniete gwazdki sa zamieniane na liczby całkowite  --%>
-
+m
     <script>
         function postToControllera() {
             for (i = 0; i < document.getElementsByName('stara').length; i++) {
@@ -282,7 +286,7 @@
                     break;
                 }
             }
-            alert(ratingValue_a);
+
         }
         function postToControllerb() {
             for (i = 0; i < document.getElementsByName('starb').length; i++) {
@@ -396,16 +400,19 @@
 </section>
 
 
+<!-- Tutaj masz cały ten formularz do wysyłania tytułów książek -->
 <div class="subscribe-form">
 
-
+    <p class="napis">Brakuje jakiejś książki na naszej pułce? Gdy pojawi
+        się w naszej bibliotece poinformujemy Cię.</p>
     <form class="form">
         <label>
             <i class="ion-location"></i>
         </label>
-        <input type="search" placeholder="Enter the title of the book" name="tytul">
-        <input type="search" placeholder="Enter your email" name="email">
-        <input type="submit" value="send">
+
+        <input type="search" placeholder="Tytuł">
+        <input type=" search" placeholder="E-mail">
+        <input class="send" type="submit" value="Wyślij">
     </form>
 
     <button class="close-btn">
@@ -414,7 +421,9 @@
 </div>
 <div class="center">
     <button id="open-subscribe-form">
-        proba
+            <span class="material-symbols-outlined" style="font-size: 80px; font-weight: 200; color: #93938e;">
+                maps_ugc
+            </span>
     </button>
 </div>
 
@@ -464,7 +473,7 @@
         Connection conn = DriverManager.getConnection("jdbc:postgresql://ella.db.elephantsql.com:5432/iocflxoq", "iocflxoq", "sEXjPGJ2VLDHhu8R6aVn_t2i1NYjMQ4-");
         Statement st=conn.createStatement();
         int i=st.executeUpdate("insert into propozycje_klientow(tytul,email)values('"+tytul+"','"+email+"')");
-       int j=st.executeUpdate("insert into ocena_uzytkownika(ratingValue_a,ratingValue_b,ratingValue_c,ratingValue_d,ratingValue_e,ratingValue_f,ratingValue_g,ratingValue_h,ratingValue_i,ratingValue_j,ratingValue_k)values('"+ratingValue_a+"','"+ratingValue_b+"','"+ratingValue_c+"','"+ratingValue_d+"','"+ratingValue_e+"','"+ratingValue_f+"','"+ratingValue_g+"','"+ratingValue_h+"','"+ratingValue_i+"','"+ratingValue_j+"','"+ratingValue_k+"')");
+       int j=st.executeUpdate("insert into ocena_uzytkownika(stara,starb,starc,stard,stare,starf,starg,starh,stari,starj,stark)values('"+ratingValue_a+"','"+ratingValue_b+"','"+ratingValue_c+"','"+ratingValue_d+"','"+ratingValue_e+"','"+ratingValue_f+"','"+ratingValue_g+"','"+ratingValue_h+"','"+ratingValue_i+"','"+ratingValue_j+"','"+ratingValue_k+"')");
 
 
 
